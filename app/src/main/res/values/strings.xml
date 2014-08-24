@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Flickr Memory Game</string>
+    <string name="title_activity_game">Memory Game</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_new_game">New Game</string>
+
+    <string name="help_text_remember">Memory test! Remember these photos and their positions. You have <b>%1$s seconds</b>.</string>
+    <string name="help_text_quiz">Tap the location on the grid where this photo was shown. </string>
+
+    <string name="help_text_result">You finished in %1$s seconds with %2$s mistakes.</string>
+
+    <string name="error_msg">Error downloading photos from Flickr.</string>
+
+</resources>
