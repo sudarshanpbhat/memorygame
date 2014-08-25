@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class GameHelperFragment extends Fragment {
     public static final String TAG = "com.sudarshanbhat.memorygame.GAME_HELPER_FRAGMENT";
 
-    public static final String API_URL = "https://api.flickr.com/services/feeds/photos_public.gne?format=json";
+    public static final String API_URL = "https://api.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1";
 
     public interface FlickrPhotoDownloadListener {
         public void onResponse(ArrayList<FlickrPhoto> photos);
@@ -120,11 +120,6 @@ public class GameHelperFragment extends Fragment {
         apiConnection.disconnect();
 
         String response = new String(bytes);
-        String feedPrefix = "jsonFlickrFeed(";
-
-        if (response.startsWith(feedPrefix)) {
-            response = response.substring(feedPrefix.length(), response.length() - 1);
-        }
         return response;
     }
 
